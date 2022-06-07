@@ -14,9 +14,16 @@ Information at [Project Euler 021](https://projecteuler.net/problem=21)
 
 **Getting Started**
 
-In the input field, enter a number
+Enter a whole number between 2 and 20000 and click on the Submit Button.  You will see the number entered as well as the sum of all the amicable numbers less than the number entered, unless you have made an invalid input.  For example, if you entered 1000, you would expect to get 504.  Click on the Reset Button to clear the information or to start again.
 
 **User Stories**
+
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 2 or greater than 20000
+- Entering a number, but it is not an integer
 
 As a user, I expect the function `sumAmicableNum(1000)` to return a number.
 
