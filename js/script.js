@@ -1,3 +1,6 @@
+// Set Up Global Array
+const DIVISOR_SUMS = Array(10000).fill(0);
+
 // Function to Display Number Information (including Invalid Input)
 function getNumberInfo() {
     // Set Up Variable
