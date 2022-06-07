@@ -30,3 +30,19 @@ function sumDivisors(n) {
     if (n%sqrt===0) sum += sqrt;
     return DIVISOR_SUMS[n] = sum;
 }
+
+/*
+    Function to Return the Sum of all the amicable numbers less than n
+    sumAmicableNum(1000) returns 504
+    sumAmicableNum(2000) returns 2898
+    sumAmicableNum(5000) returns 8442
+    sumAmicableNum(10000) returns 31626
+*/
+function sumAmicableNum(n) {
+    let sum = 0;
+    for (let i=1;i<n;i++) {
+        let possiblePair = sumDivisors(i);
+        if (possiblePair!==i && sumDivisors(possiblePair)===i) sum += i;
+    }
+    return sum;
+}
