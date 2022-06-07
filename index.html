@@ -23,5 +23,28 @@
         <p>For example, the proper divisors of 220 are <span class="divisors"></span>1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110</span>; therefore d(220) = 284.  The proper divisors of 284 are <span class="divisors">1, 2, 4, 71 and 142</span>; so d(284) = 220.</p>
         <p>The aim is to find the sum of all the amicable numbers less than a certain value.</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 2 and 20000 (e.g. 1000)" title="Enter whole number between 2 and 20000 (e.g. 1000)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
+    </section>
 </body>
 </html>
