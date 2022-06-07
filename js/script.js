@@ -18,3 +18,15 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+// Function to Return the Sum of Divisors
+function sumDivisors(n) {
+    if (DIVISOR_SUMS[n]) return DIVISOR_SUMS[n];
+    let sum = 1;
+    let sqrt = Math.floor(Math.sqrt(n));
+    for (let i=2;i<sqrt;i++) {
+        if (n%i===0) sum += i + n/i;
+    }
+    if (n%sqrt===0) sum += sqrt;
+    return DIVISOR_SUMS[n] = sum;
+}
