@@ -38,3 +38,8 @@ As a user, I expect the function `sumAmicableNum(10000)` to return 31626.
 **Information Architecture**
 
 The function `sumAmicableNum(n)` returns a number, where `n` is a number.
+
+## Features
+
+Allows the user to enter a number as well as getting the sum of all the amicable numbers less than that number.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
