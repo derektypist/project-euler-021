@@ -14,7 +14,7 @@ Information at [Project Euler 021](https://projecteuler.net/problem=21)
 
 **Getting Started**
 
-Enter a whole number between 2 and 20000 and click on the Submit Button.  You will see the number entered as well as the sum of all the amicable numbers less than the number entered, unless you have made an invalid input.  For example, if you entered 1000, you would expect to get 504.  Click on the Reset Button to clear the information or to start again.
+Enter a whole number between 2 and 10000 and click on the Submit Button.  You will see the number entered as well as the sum of all the amicable numbers less than the number entered, unless you have made an invalid input.  For example, if you entered 1000, you would expect to get 504.  Click on the Reset Button to clear the information or to start again.
 
 **User Stories**
 
@@ -22,7 +22,7 @@ As a user, I expect to get an error message, if I do any of:
 
 - Not enter anything in the input field
 - Entering text other than a number
-- Entering a number less than 2 or greater than 20000
+- Entering a number less than 2 or greater than 10000
 - Entering a number, but it is not an integer
 
 As a user, I expect the function `sumAmicableNum(1000)` to return a number.
@@ -37,9 +37,13 @@ As a user, I expect the function `sumAmicableNum(10000)` to return 31626.
 
 **Information Architecture**
 
-The function `sumAmicableNum(n)` returns a number, where `n` is a number.
+The function `sumAmicableNum(n)` returns a number, where `n` is a number between 2 and 10000.
 
 ## Features
 
 Allows the user to enter a number as well as getting the sum of all the amicable numbers less than that number.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.0-Beta1 and Google Fonts.
 
